@@ -1,0 +1,18 @@
+def ReplaceInputTextCyrToLat(value): # * Из-за особеностей сайта, с которого берется информация про номер, надо заменять киррилические символы на латиницу
+    #print('Введіть номер авто: ')
+    #plateNumber = input()
+    plateNumber = value
+    plateNumber = plateNumber.upper()
+    plateNumber = plateNumber.replace('А', 'A')
+    plateNumber = plateNumber.replace('В', 'B')
+    plateNumber = plateNumber.replace('Е', 'E')
+    plateNumber = plateNumber.replace('І', 'I')
+    plateNumber = plateNumber.replace('К', 'K')
+    plateNumber = plateNumber.replace('М', 'M')
+    plateNumber = plateNumber.replace('Н', 'H')
+    plateNumber = plateNumber.replace('О', 'O')
+    plateNumber = plateNumber.replace('Р', 'P')
+    plateNumber = plateNumber.replace('С', 'C')
+    plateNumber = plateNumber.replace('Т', 'T')
+    plateNumber = plateNumber.replace('Х', 'X')
+    return(plateNumber)
